@@ -10,6 +10,9 @@ public class SportClub {
 	private Team teamA;
 	private Team teamB;
 	private SportsFacilities sportfacilities;
+	private Employees technicalcoach;
+	private Employees headcoach;
+	private Employees players;
 	
 	//EMPLOYESS.. TEAM 2, offices 36 (6x6), dress1 42(7x6) y dess2 49 (7x7). 
 
@@ -134,24 +137,46 @@ public class SportClub {
 		this.name = name;
 	}
 	
-	/*public Employees hireEmployees(String nameEmployees, String id, String salary, String state) {
-
-		Employees employees = new Employees(nameEmployees, id, salary, state);
-		
-		employees.setNameEmployees("");
-		employees.setId("");
-		employees.setSalary = ("");
-		employees.setState("");
-		
-		
-		return employees;
+	
+	public void creEmployee(String nameEmployees, String id, String salary,String state) {
+		System.out.println("CREATE EMPLOYEES\n");
+		new Employees(nameEmployees, id, salary, state);		
 	}
 	
-	ListEmployees.add(addEmployes);*/
+	public void EmployeesPlayer(String nameEmployees, String id, String salary, String state, String shirtNumber, String goals,int qualifiquer, Position position) {
+		
+		System.out.println("CREATE EMPLOYEES\n");
+		new Players(nameEmployees, id, salary, state,shirtNumber, goals, qualifiquer, position);
 	
-	
-	
+;
+		listemployees.add((Employees) players);
+	}	
 	
 
+	public void EmployeesCoachHead(String nameEmployees, String id, String salary, String state,  String yearsExperience,int equipment, int championships) {
+		System.out.println("CREATE EMPLOYEES\n");
+		new HeadCoach(nameEmployees, id, salary, state, yearsExperience,equipment,championships);
+		
+		//Employees headcoach = null;
+		listemployees.add((Employees) headcoach);
+	}	
+	
+	public ArrayList<Employees> EmployeesCoachTec(String nameEmployees, String id, String salary, String state,  String yearsExperience,int player, Expertise expertise) {
+		System.out.println("CREATE EMPLOYEES\n");
+		new TechnicalCoach(nameEmployees, id, salary, state, yearsExperience, player, expertise);
+		
+		listemployees.add((Employees) technicalcoach);
+		return listemployees;
+	}
+	
+	public Team teamA(String nameTeam, HeadCoach headcoach, TechnicalCoach[] technicalCoach, Players[] players,Lineups lineups) {
+		
+		return teamA("TeamA",headcoach, technicalCoach,players,lineups);
+	}
+	
+	public Team teamB(String nameTeam, HeadCoach headcoach, TechnicalCoach[] technicalCoach, Players[] players,Lineups lineups) {
+		
+		return teamB("TeamB",headcoach, technicalCoach,players,lineups);
+	}
 	
 }

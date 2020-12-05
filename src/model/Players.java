@@ -2,7 +2,7 @@ package model;
 
 public class Players extends Employees{
 	private String shirtNumber;
-	private int goals;
+	private String goals;
 	private int qualifiquer;
 	private Position position;
 	
@@ -16,7 +16,7 @@ public class Players extends Employees{
 	 * @param qualifiquer
 	 * @param position
 	 */
-	public Players(String nameEmployees, String id, String salary, String state, String shirtNumber, int goals,
+	public Players(String nameEmployees, String id, String salary, String state, String shirtNumber, String goals,
 			int qualifiquer, Position position) {
 		super(nameEmployees, id, salary, state);
 		this.shirtNumber = shirtNumber;
@@ -42,10 +42,13 @@ public class Players extends Employees{
 	}
 
 
+	
+
+
 	/**
 	 * @return the goals
 	 */
-	public int getGoals() {
+	public String getGoals() {
 		return goals;
 	}
 
@@ -53,7 +56,7 @@ public class Players extends Employees{
 	/**
 	 * @param goals the goals to set
 	 */
-	public void setGoals(int goals) {
+	public void setGoals(String goals) {
 		this.goals = goals;
 	}
 

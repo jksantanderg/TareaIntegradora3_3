@@ -6,8 +6,8 @@ public class Team {
 	
 	private String nameTeam;
 	private HeadCoach headcoach;
-	private TechnicalCoach[] technicalCoach;
-	private Players[] players;
+	private TechnicalCoach[] technicalCoachTeam;
+	private Players[] playersTeam;
 	private Lineups lineups;;
 	
 	// PLAYERS 25, COACH1, TECNI3, lineups
@@ -24,11 +24,10 @@ public class Team {
 		super();
 		this.nameTeam = nameTeam;
 		this.headcoach = headcoach;
-		technicalCoach = new TechnicalCoach [TECHNICAL];
-		players = new Players [PLAYERS];
+		technicalCoachTeam = new TechnicalCoach [TECHNICAL];
+		playersTeam = new Players [PLAYERS];
 		this.lineups = lineups;
 	}
-
 
 	/**
 	 * @return the nameTeam
@@ -37,7 +36,6 @@ public class Team {
 		return nameTeam;
 	}
 
-
 	/**
 	 * @param nameTeam the nameTeam to set
 	 */
@@ -45,77 +43,75 @@ public class Team {
 		this.nameTeam = nameTeam;
 	}
 
-
 	/**
-	 * @return the head coach
+	 * @return the headcoach
 	 */
 	public HeadCoach getHeadcoach() {
 		return headcoach;
 	}
 
-
 	/**
-	 * @param headcoach the head coach to set
+	 * @param headcoach the headcoach to set
 	 */
 	public void setHeadcoach(HeadCoach headcoach) {
 		this.headcoach = headcoach;
 	}
 
-
 	/**
-	 * @return the technicalCoach
+	 * @return the technicalCoachTeam
 	 */
-	public TechnicalCoach[] getTechnicalCoach() {
-		return technicalCoach;
+	public TechnicalCoach[] getTechnicalCoachTeam() {
+		return technicalCoachTeam;
 	}
 
-
 	/**
-	 * @param technicalCoach the technicalCoach to set
+	 * @param technicalCoachTeam the technicalCoachTeam to set
 	 */
-	public void setTechnicalCoach(TechnicalCoach[] technicalCoach) {
-		this.technicalCoach = technicalCoach;
+	public void setTechnicalCoachTeam(TechnicalCoach[] technicalCoachTeam) {
+		this.technicalCoachTeam = technicalCoachTeam;
 	}
 
-
 	/**
-	 * @return the players
+	 * @return the playersTeam
 	 */
-	public Players[] getPlayers() {
-		return players;
+	public Players[] getPlayersTeam() {
+		return playersTeam;
 	}
 
-
 	/**
-	 * @param players the players to set
+	 * @param playersTeam the playersTeam to set
 	 */
-	public void setPlayers(Players[] players) {
-		this.players = players;
+	public void setPlayersTeam(Players[] playersTeam) {
+		this.playersTeam = playersTeam;
 	}
 
-
 	/**
-	 * @return a object
+	 * @return the lineups
 	 */
 	public Lineups getLineups() {
 		return lineups;
 	}
 
-
 	/**
-	 * @param lineups 
+	 * @param lineups the lineups to set
 	 */
 	public void setLineups(Lineups lineups) {
 		this.lineups = lineups;
 	}
 
+	/**
+	 * @return the players
+	 */
+	public static int getPlayers() {
+		return PLAYERS;
+	}
 
 	/**
 	 * @return the technical
 	 */
 	public static int getTechnical() {
 		return TECHNICAL;
-	}	
+	}
 	
 }
 		

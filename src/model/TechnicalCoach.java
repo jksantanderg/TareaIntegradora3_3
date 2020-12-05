@@ -1,7 +1,7 @@
 package model;
 
 public class TechnicalCoach extends Coach{
-	private boolean player;
+	private int player;
 	private Expertise expertise;
 	
 	/**
@@ -14,25 +14,31 @@ public class TechnicalCoach extends Coach{
 	 * @param expertise
 	 */
 	public TechnicalCoach(String nameEmployees, String id, String salary, String state, String yearsExperience,
-			boolean player, Expertise expertise) {
+			int player, Expertise expertise) {
 		super(nameEmployees, id, salary, state, yearsExperience);
 		this.player = player;
 		this.expertise = expertise;
 	}
 
+	
+
 	/**
 	 * @return the player
 	 */
-	public boolean isPlayer() {
+	public int getPlayer() {
 		return player;
 	}
+
+
 
 	/**
 	 * @param player the player to set
 	 */
-	public void setPlayer(boolean player) {
+	public void setPlayer(int player) {
 		this.player = player;
 	}
+
+
 
 	/**
 	 * @return the expertise
