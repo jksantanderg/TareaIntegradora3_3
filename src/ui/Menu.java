@@ -3,6 +3,8 @@ package ui;
 //import model.*;
 import java.util.Scanner;
 
+//import model.Position;
+
 public class Menu {
 
 	private final static int HIRE_EMPLOYEESS = 1;
@@ -20,6 +22,7 @@ public class Menu {
 
 		
 	private static Scanner sc = new Scanner(System.in);
+	//private Players players;
 		
 	public Menu() {
 		super();
@@ -64,7 +67,8 @@ public class Menu {
 	public void doOperation(int choice) {
 		switch (choice) {
 		case HIRE_EMPLOYEESS:
-	//this.users = createUser();
+			//this.players = hirePlayer();
+			
 			break;
 		case FIRE_EMPLOYEESS:
 	//System.out.println(users.showUser());
@@ -114,18 +118,29 @@ public class Menu {
 			doOperation(option);
 		}while(option!=15);
 	}	
-	//String nameEmployees, String id, String salary, String state, String shirtNumber, int goals,
-	public void hirePlayer() {
+	//String nameEmployees, String id, String salary, String state, String shirtNumber, int goals,int qualifiquer, Position position
+	/*public Players hirePlayer() {
 		System.out.println("CREATE PLAYER\n");
 		System.out.println("Enter name player");
 		String nameEmployees = sc.next();
 		System.out.println("Enter id ");
-		String pasword = sc.next();
-		System.out.println("Enter the user's age: ");
-		int age = sc.nextInt();
-		CategoryUser category = CategoryUser.newbie;
+		String id = sc.next();
+		System.out.println("Enter the salary: ");
+		String salary = sc.next();
+		System.out.println("Enter the state ");
+		String statee = sc.next();
+		System.out.println("Enter the player's jersey number ");
+		String shirtNumber = sc.next();
+		System.out.println("Enter the goals ");
+		int goals = sc.nextInt();
+		System.out.println("Enter the quantifiquer ");
+		int quantifiquer = sc.nextInt();
+		System.out.println("Enter the position ");
+		String position = sc.next();
 		
-		Users users = new Users (name,pasword,age,category);
-		return users;
-	}
+		
+		Players players = new Players (String nameEmployees, String id, String salary, String state, String shirtNumber, int goals,
+				int qualifiquer, Position position);
+		return players;
+	}*/
 }
