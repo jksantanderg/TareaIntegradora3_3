@@ -122,7 +122,10 @@ public class Menu {
 			doOperation(option);
 		}while(option!=15);
 	}	
-	//String nameEmployees, String id, String salary, String state
+	
+	/**
+	 * hire employees
+	 */
 	public void hireEmployee() {
 		System.out.println("-------------------- ");
 		System.out.println("Enter 1. if you want to hire a players ");
@@ -152,7 +155,12 @@ public class Menu {
 		}
 		
 	}
+
 	
+	/**
+	 * create a players
+	 * @return players
+	 */
 	public Players hirePlayers() {
 		System.out.println("CREATE PLAYERS\n");
 		System.out.println("Enter the name the employees ");
@@ -177,6 +185,10 @@ public class Menu {
 		return players;
 	}
 	
+	/**
+	 * create a object Head Coach
+	 * @return head coach
+	 */
 	public HeadCoach hireHeadCoach() {
 		System.out.println("CREATE PLAYERS\n");
 		System.out.println("Enter the name the employees ");
@@ -199,7 +211,10 @@ public class Menu {
 	}
 	
 	
-	
+	/**
+	 * create a technicalCoach
+	 * @return technicalCoach
+	 */
 	public TechnicalCoach technicalCoach() {
 		System.out.println("CREATE HIRE TECHNICAL COACH\n");
 		System.out.println("Enter the name the employees ");
@@ -295,6 +310,10 @@ public class Menu {
 	
 	//AGREGAR EQUIPO
 	
+	/**
+	 * create a add team
+	 * @return
+	 */
 	public void addTeam() {
 		System.out.println("-------------------- ");
 		System.out.println("-----ADD TEAM--------------- ");
@@ -314,7 +333,10 @@ public class Menu {
 	}
 	
 
-	
+	/**
+	 * add team
+	 * @return 
+	 */
 	public void AddTeam() {
 	
 		System.out.println("-------------------- ");
@@ -345,6 +367,10 @@ public class Menu {
 		}
 	}
 	
+	/**
+	 * add players a Team
+	 * @return 
+	 */
 	public void addPlayers() {
 		
 		System.out.println("Enter how many players do you want to join the team ");
@@ -365,7 +391,10 @@ public class Menu {
 
 		
 	
-		
+	/**
+	 * select team
+	 * @return
+	 */	
 	public void teamm(){
 		
 		System.out.println("Enter 1. TEAM A ");

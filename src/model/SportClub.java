@@ -47,14 +47,14 @@ public class SportClub {
 	
 	
 	/**
-	 * @return the nit
+	 * @return String
 	 */
 	public String getNit() {
 		return nit;
 	}
 
 	/**
-	 * @param nit the nit to set
+	 * @param String
 	 */
 	public void setNit(String nit) {
 		this.nit = nit;
@@ -137,12 +137,19 @@ public class SportClub {
 		this.name = name;
 	}
 	
-	
+	/**
+	 * create object
+	 * @param String nameEmployees, String id, String salary,String state
+	 */
 	public void creEmployee(String nameEmployees, String id, String salary,String state) {
 		System.out.println("CREATE EMPLOYEES\n");
 		new Employees(nameEmployees, id, salary, state);		
 	}
 	
+	/**
+	 * create object
+	 * @param String nameEmployees, String id, String salary, String state, String shirtNumber, String goals, Position position
+	 */
 	public void EmployeesPlayer(String nameEmployees, String id, String salary, String state, String shirtNumber, String goals,int qualifiquer, Position position) {
 		
 		System.out.println("CREATE EMPLOYEES\n");
@@ -152,15 +159,21 @@ public class SportClub {
 		listemployees.add((Employees) players);
 	}	
 	
-
+	/**
+	 * create object
+	 * @param 
+	 */
 	public void EmployeesCoachHead(String nameEmployees, String id, String salary, String state,  String yearsExperience,int equipment, int championships) {
 		System.out.println("CREATE EMPLOYEES\n");
 		new HeadCoach(nameEmployees, id, salary, state, yearsExperience,equipment,championships);
 		
-		//Employees headcoach = null;
 		listemployees.add((Employees) headcoach);
 	}	
 	
+	/**
+	 * create object
+	 * @param String nameEmployees, String id, String salary, String state,  String yearsExperience, player, Expertise expertise
+	 */
 	public ArrayList<Employees> EmployeesCoachTec(String nameEmployees, String id, String salary, String state,  String yearsExperience,int player, Expertise expertise) {
 		System.out.println("CREATE EMPLOYEES\n");
 		new TechnicalCoach(nameEmployees, id, salary, state, yearsExperience, player, expertise);
@@ -169,11 +182,19 @@ public class SportClub {
 		return listemployees;
 	}
 	
+	/**
+	 * create object
+	 * @param String nameTeam, HeadCoach head coach, TechnicalCoach[] technicalCoach, Players[] players.
+	 */
 	public Team teamA(String nameTeam, HeadCoach headcoach, TechnicalCoach[] technicalCoach, Players[] players,Lineups lineups) {
 		
 		return teamA("TeamA",headcoach, technicalCoach,players,lineups);
 	}
 	
+	/**
+	 * create object
+	 * @param String nameTeam, HeadCoach head coach, TechnicalCoach[] technicalCoach, Players[] players.
+	 */
 	public Team teamB(String nameTeam, HeadCoach headcoach, TechnicalCoach[] technicalCoach, Players[] players,Lineups lineups) {
 		
 		return teamB("TeamB",headcoach, technicalCoach,players,lineups);

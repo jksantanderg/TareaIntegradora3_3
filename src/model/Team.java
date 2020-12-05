@@ -10,7 +10,7 @@ public class Team {
 	private Players[] playersTeam;
 	private Lineups lineups;;
 	
-	// PLAYERS 25, COACH1, TECNI3, lineups
+	// PLAYERS 25, COACH1, TECNI3
 	
 	/**
 	 * @param nameTeam
@@ -44,14 +44,14 @@ public class Team {
 	}
 
 	/**
-	 * @return the headcoach
+	 * @return the head coach
 	 */
 	public HeadCoach getHeadcoach() {
 		return headcoach;
 	}
 
 	/**
-	 * @param headcoach the headcoach to set
+	 * @param headcoach the head coach to set
 	 */
 	public void setHeadcoach(HeadCoach headcoach) {
 		this.headcoach = headcoach;
@@ -86,14 +86,14 @@ public class Team {
 	}
 
 	/**
-	 * @return the lineups
+	 * @return emun
 	 */
 	public Lineups getLineups() {
 		return lineups;
 	}
 
 	/**
-	 * @param lineups the lineups to set
+	 * @param emun
 	 */
 	public void setLineups(Lineups lineups) {
 		this.lineups = lineups;

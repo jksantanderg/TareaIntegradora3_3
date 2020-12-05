@@ -32,14 +32,14 @@ public class Lineups {
 	}
 
 	/**
-	 * @return the tatic
+	 * @return String 
 	 */
 	public String getTatic() {
 		return tatic;
 	}
 
 	/**
-	 * @param tatic the tatic to set
+	 * @param tatic 
 	 */
 	public void setTatic(String tatic) {
 		this.tatic = tatic;

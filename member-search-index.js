@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"model","c":"Coach","l":"Coach(String, String, String, String, String)","url":"%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"},{"p":"model","c":"Coach","l":"getYearsExperience()"},{"p":"model","c":"Coach","l":"setYearsExperience(String)","url":"setYearsExperience(java.lang.String)"}]

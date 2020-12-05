@@ -70,7 +70,7 @@ public class Players extends Employees{
 
 
 	/**
-	 * @param qualifiquer the qualifiquer to set
+	 * @param qualifiquer
 	 */
 	public void setQualifiquer(int qualifiquer) {
 		this.qualifiquer = qualifiquer;
